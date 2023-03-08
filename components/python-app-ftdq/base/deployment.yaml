@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: python-app-ftdq
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:PkBxd-python-app-ftdq
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c134d654085940fba9c4a5ea2eb4c5b2130762c7421128fe5428f9a6d9f4538c
         name: my-python
         ports:
         - containerPort: 8081
