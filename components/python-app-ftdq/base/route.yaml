@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: python-app-ftdq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: python-app-ftdq
+    app.kubernetes.io/part-of: that-python-app
+  name: python-app-ftdq
+  namespace: ralphjbean-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: python-app-ftdq
+    weight: null
+status: {}
